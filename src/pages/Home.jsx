@@ -13,7 +13,7 @@ const Home = () => {
         <Row title="Populaire" fetchURL={requests.requestPopular} />
         <Row title="Les mieux notés" fetchURL={requests.requestTopRated} />
         <Row title="Horreur" fetchURL={requests.requestHorror} />
-        <Row title="Dernières sorties" fetchURL={requests.requestLatest} />
+        
     </div>
   )
 }
