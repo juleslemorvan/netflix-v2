@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
@@ -35,7 +35,7 @@ const Login = () => {
         <div className="fixed w-full px-4 py-24 z-50">
           <div className="max-w-[450px] h-[600px] mx-auto bg-black/75 text-white">
             <div className="max-w-[320px] mx-auto py-16">
-              <h1 className="text-3xl font-bold">Sign Up</h1>
+              <h1 className="text-3xl font-bold">Sign In</h1>
               <form onSubmit={formSubmit} className="w-full flex flex-col py-4">
                 <input
                 onChange={(e) => setEmail(e.target.value)}
@@ -62,12 +62,7 @@ const Login = () => {
                   </p>
                   <p>Need Help ?</p>
                 </div>
-                <p className="m-5 text-sm text-gray-600">
-                  Already subscribed to Netflix ?{" "}
-                  <Link className="text-white" to="/login">
-                    Sign-in
-                  </Link>
-                </p>
+               
               </form>
             </div>
           </div>
