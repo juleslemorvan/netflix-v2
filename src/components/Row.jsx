@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 import Movie from "./Movie";
 
 const Row = ({ title, fetchURL }) => {
   const [movies, setMovies] = useState([]);
+
 
   useEffect(() => {
     axios.get(fetchURL).then((res) => {
