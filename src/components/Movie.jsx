@@ -29,6 +29,7 @@ const Movie = ({ item }) => {
     }
   };
   
+  
   return (
     <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 ">
       {item && (
@@ -52,7 +53,7 @@ const Movie = ({ item }) => {
               )}
             </p>
 
-            <Link to="./login">
+            <Link to={`/movie/${item.id}`} state={{data:item}}>
               <p>
                 <FaInfo className="absolute top-4 right-4 text-gray-300" />
               </p>
